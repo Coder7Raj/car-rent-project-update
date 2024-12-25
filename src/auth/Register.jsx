@@ -1,10 +1,10 @@
 import React, { useState, useContext, useEffect } from "react";
-import { AuthContext } from "../AuthProvider/Authprovider";
 import { Link, useNavigate } from "react-router-dom";
-import animationData from "/public/registerAnimation.json";
-import Lottie from "react-lottie-player";
 import Swal from "sweetalert2";
 import { FaRegEye, FaRegEyeSlash } from "react-icons/fa";
+import animationData from "/public/registerAnimation.json";
+import { AuthContext } from "./AuthProvider/AuthProvider";
+import Lottie from "react-lottie-player";
 
 const Register = () => {
   const { user, registerUser, setUser, handleGoogleLogin, updateUserProfile } =
@@ -52,7 +52,7 @@ const Register = () => {
           const createdUser = result?.user?.metadata?.creationTime;
           const newUser = { name, email, createdUser };
 
-          fetch("https://gamer-server-sigma.vercel.app/users", {
+          fetch("http://localhost:5000/users", {
             method: "POST",
             headers: {
               "content-type": "application/json",

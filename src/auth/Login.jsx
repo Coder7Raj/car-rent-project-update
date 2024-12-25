@@ -1,10 +1,10 @@
 import React, { useContext, useEffect, useState } from "react";
-import animationData from "/public/loginAnimation.json";
-import Lottie from "react-lottie-player";
-import { AuthContext } from "../AuthProvider/Authprovider";
 import { Link, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 import { FaRegEye, FaRegEyeSlash } from "react-icons/fa";
+import animationData from "/public/loginAnimation.json";
+import Lottie from "react-lottie-player";
+import { AuthContext } from "./AuthProvider/AuthProvider";
 
 const Login = () => {
   const { user, loginUser, handleGoogleLogin } = useContext(AuthContext);
@@ -34,7 +34,7 @@ const Login = () => {
         if (result?.user) {
           const lastSignInTime = result?.user?.metadata?.lastSignInTime;
           const signInInfo = { email, lastSignInTime };
-          fetch("https://gamer-server-sigma.vercel.app/users", {
+          fetch("http://localhost:5000/users", {
             method: "PATCH",
             headers: {
               "content-type": "application/json",

@@ -1,8 +1,7 @@
 import React, { useContext } from "react";
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import { FaRegUserCircle } from "react-icons/fa";
-import logo from "../../assets/gameHive.jpg";
-import { AuthContext } from "../AuthProvider/Authprovider";
+import { AuthContext } from "../auth/AuthProvider/AuthProvider";
 
 const Navbar = () => {
   const { user, logoutUser, handleGoogleSignOut } = useContext(AuthContext);
@@ -66,49 +65,49 @@ const Navbar = () => {
                 Home
               </NavLink>
               <NavLink
-                to="/allReviews"
+                to="/available_Cars"
                 className={({ isActive }) =>
                   `text-md font-semibold hover:text-red-700 hover:bg-white ${
                     isActive ? "text-[#4335A7]" : ""
                   }`
                 }
               >
-                AllReviews
+                Available Cars
               </NavLink>
               <NavLink
-                to="/addReview"
+                to="/add_Car"
                 className={({ isActive }) =>
                   `text-md font-semibold hover:text-red-700 hover:bg-white ${
                     isActive ? "text-[#4335A7]" : ""
                   }`
                 }
               >
-                AddReview
+                Add Car
               </NavLink>
               <NavLink
-                to="/myReview"
+                to="/my_Cars"
                 className={({ isActive }) =>
                   `text-md font-semibold hover:text-red-700 hover:bg-white ${
                     isActive ? "text-[#4335A7]" : ""
                   }`
                 }
               >
-                MyReviews
+                My Cars
               </NavLink>
               <NavLink
-                to="/gameWatchList"
+                to="/my_Bookings"
                 className={({ isActive }) =>
                   `text-md font-semibold hover:text-red-700 hover:bg-white ${
                     isActive ? "text-[#4335A7]" : ""
                   }`
                 }
               >
-                GameWatchlist
+                My Bookings
               </NavLink>
             </ul>
           </div>
           <NavLink to="/" className="flex text-xl font-semibold">
-            <img className="lg:w-8 w-6 rounded-[50%]" src={logo} alt="" />
+            {/* <img className="lg:w-8 w-6 rounded-[50%]" src={logo} alt="" /> */}
             GameHive
           </NavLink>
         </div>
@@ -125,44 +124,44 @@ const Navbar = () => {
               Home
             </NavLink>
             <NavLink
-              to="/allReviews"
+              to="/available_Cars"
               className={({ isActive }) =>
                 `text-md font-semibold hover:text-red-700 hover:bg-white ${
                   isActive ? "text-[#4335A7]" : ""
                 }`
               }
             >
-              AllReviews
+              Available Cars
             </NavLink>
             <NavLink
-              to="/addReview"
+              to="/add_Car"
               className={({ isActive }) =>
                 `text-md font-semibold hover:text-red-700 hover:bg-white ${
                   isActive ? "text-[#4335A7]" : ""
                 }`
               }
             >
-              AddReview
+              Add Car
             </NavLink>
             <NavLink
-              to="/myReview"
+              to="/my_Cars"
               className={({ isActive }) =>
                 `text-md font-semibold hover:text-red-700 hover:bg-white ${
                   isActive ? "text-[#4335A7]" : ""
                 }`
               }
             >
-              MyReviews
+              My Cars
             </NavLink>
             <NavLink
-              to="/gameWatchList"
+              to="/my_Bookings"
               className={({ isActive }) =>
                 `text-md font-semibold hover:text-red-700 hover:bg-white ${
                   isActive ? "text-[#4335A7]" : ""
                 }`
               }
             >
-              GameWatchlist
+              My Bookings
             </NavLink>
           </ul>
         </div>
