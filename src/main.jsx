@@ -11,6 +11,8 @@ import AvailableCars from "./pages/AvailableCars";
 import AddCar from "./pages/AddCar";
 import MyCars from "./pages/MyCars";
 import MyBookings from "./pages/MyBookings";
+import Banner from "./components/Banner";
+import CarDetails from "./pages/CarDetails";
 
 const router = createBrowserRouter([
   {
@@ -22,8 +24,16 @@ const router = createBrowserRouter([
         element: <Home></Home>,
         children: [
           {
+            path: "/",
+            element: <Banner></Banner>,
+          },
+          {
             path: "available_Cars",
             element: <AvailableCars></AvailableCars>,
+          },
+          {
+            path: "car_details",
+            element: <CarDetails></CarDetails>,
           },
           {
             path: "add_Car",
