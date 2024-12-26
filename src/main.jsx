@@ -29,36 +29,36 @@ const router = createBrowserRouter([
             path: "/",
             element: <Banner></Banner>,
           },
-          {
-            path: "available_Cars",
-            element: <AvailableCars></AvailableCars>,
-          },
-          {
-            path: "car_details",
-            element: <CarDetails></CarDetails>,
-          },
-          {
-            path: "add_Car",
-            element: <AddCar></AddCar>,
-          },
-          {
-            path: "my_Cars",
-            element: <MyCars></MyCars>,
-          },
-
-          {
-            path: "my_Bookings",
-            element: <MyBookings></MyBookings>,
-          },
-          {
-            path: "login",
-            element: <Login></Login>,
-          },
-          {
-            path: "register",
-            element: <Register></Register>,
-          },
         ],
+      },
+      {
+        path: "available_Cars",
+        element: <AvailableCars></AvailableCars>,
+      },
+      {
+        path: "car_details",
+        element: <CarDetails></CarDetails>,
+      },
+      {
+        path: "add_Car",
+        element: <AddCar></AddCar>,
+      },
+      {
+        path: "my_Cars",
+        element: <MyCars></MyCars>,
+      },
+
+      {
+        path: "my_Bookings",
+        element: <MyBookings></MyBookings>,
+      },
+      {
+        path: "login",
+        element: <Login></Login>,
+      },
+      {
+        path: "register",
+        element: <Register></Register>,
       },
     ],
   },
