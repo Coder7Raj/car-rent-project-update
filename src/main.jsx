@@ -13,11 +13,13 @@ import MyCars from "./pages/MyCars";
 import MyBookings from "./pages/MyBookings";
 import Banner from "./components/Banner";
 import CarDetails from "./pages/CarDetails";
+import Error from "./pages/Error";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
+    errorElement: <Error></Error>,
     children: [
       {
         path: "/",
