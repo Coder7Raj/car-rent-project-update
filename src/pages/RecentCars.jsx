@@ -20,7 +20,7 @@ const RecentCars = () => {
           corporis maxime quisquam. Sint aperiam sequi ipsa necessitatibus quos!
         </p>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-4 bg-gray-100">
+      <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-4 bg-gray-100 p-5">
         {cars?.slice(0, 6).map((car) => (
           <Cars key={car._id} car={car}></Cars>
         ))}

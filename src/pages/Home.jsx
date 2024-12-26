@@ -3,6 +3,7 @@ import { Outlet } from "react-router-dom";
 import SpecialOffers from "./SpecialOffers";
 import RecentCars from "./RecentCars";
 import ChooseFor from "./ChooseFor";
+import Testimonials from "./Testimonials";
 
 const Home = () => {
   return (
@@ -16,6 +17,9 @@ const Home = () => {
       </div>
       <div>
         <ChooseFor></ChooseFor>
+      </div>
+      <div>
+        <Testimonials></Testimonials>
       </div>
     </div>
   );

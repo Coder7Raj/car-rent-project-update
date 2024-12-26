@@ -30,7 +30,7 @@ const ChooseFor = () => {
   ];
 
   return (
-    <div className="p-8">
+    <div>
       <div className="text-center mb-6 mt-10">
         <h1 className="text-3xl font-bold mb-4 text-gray-800">
           Why Choose Us?
@@ -41,7 +41,7 @@ const ChooseFor = () => {
           customer support. Drive with confidence!
         </p>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 bg-gray-100">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 p-5 bg-gray-100">
         {points.map((point) => (
           <div
             key={point.id}
