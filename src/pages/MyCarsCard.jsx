@@ -57,7 +57,7 @@ const MyCarsCard = ({ car, setCars }) => {
         <p>Description: {description}</p>
       </div>
       <div>
-        <Link>
+        <Link to={`/update_my_car/${_id}`}>
           <button className="btn btn-outline btn-primary">Update</button>
         </Link>
         <button

@@ -14,6 +14,7 @@ import MyBookings from "./pages/MyBookings";
 import Banner from "./components/Banner";
 import CarDetails from "./pages/CarDetails";
 import Error from "./pages/Error";
+import UpdateMyCar from "./pages/UpdateMyCar";
 
 const router = createBrowserRouter([
   {
@@ -46,6 +47,12 @@ const router = createBrowserRouter([
       {
         path: "my_Cars",
         element: <MyCars></MyCars>,
+      },
+      {
+        path: "update_my_car/:id",
+        element: <UpdateMyCar></UpdateMyCar>,
+        loader: ({ params }) =>
+          fetch(`http://localhost:5000/allCars/${params.id}`),
       },
 
       {
