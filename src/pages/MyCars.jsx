@@ -8,7 +8,7 @@ const MyCars = () => {
 
   useEffect(() => {
     if (user?.email) {
-      fetch(`http://localhost:5000/allCars?email=${user.email}`, {
+      fetch(`http://localhost:5000/myCars?email=${user.email}`, {
         method: "GET",
         headers: { "Content-Type": "application/json" },
       })
