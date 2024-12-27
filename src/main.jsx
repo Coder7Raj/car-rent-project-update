@@ -33,19 +33,22 @@ const router = createBrowserRouter([
         ],
       },
       {
-        path: "available_Cars",
+        path: "available_cars",
         element: <AvailableCars></AvailableCars>,
       },
+
       {
-        path: "car_details",
+        path: "car_details/:id",
         element: <CarDetails></CarDetails>,
+        loader: ({ params }) =>
+          fetch(`http://localhost:5000/allCars/${params.id}`),
       },
       {
-        path: "add_Car",
+        path: "add_car",
         element: <AddCar></AddCar>,
       },
       {
-        path: "my_Cars",
+        path: "my_cars",
         element: <MyCars></MyCars>,
       },
       {
@@ -56,7 +59,7 @@ const router = createBrowserRouter([
       },
 
       {
-        path: "my_Bookings",
+        path: "my_bookings",
         element: <MyBookings></MyBookings>,
       },
       {

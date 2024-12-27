@@ -44,19 +44,19 @@ const MyCarsCard = ({ car, setCars }) => {
     });
   };
   return (
-    <div>
+    <div className="flex flex-col h-full overflow-hidden shadow-md rounded-md">
       <div>
         <img className="w-full h-[180px]" src={image} alt={name} />
       </div>
-      <div>
+      <div className="flex-1 p-2">
         <h1>Name:{name}</h1>
         <p>Model: {model}</p>
         <p>PricePerDay: {pricePerDay}</p>
-        <p>Availability: {availability}</p>
+        <p>Availability: {availability ? "Available" : "Unavailable"}</p>
         <p>Features: {features.length}</p>
         <p>Description: {description}</p>
       </div>
-      <div>
+      <div className="p-2 flex justify-between gap-4 mt-auto">
         <Link to={`/update_my_car/${_id}`}>
           <button className="btn btn-outline btn-primary">Update</button>
         </Link>

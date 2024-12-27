@@ -65,7 +65,7 @@ const Navbar = () => {
                 Home
               </NavLink>
               <NavLink
-                to="/available_Cars"
+                to="/available_cars"
                 className={({ isActive }) =>
                   `text-md font-semibold hover:text-red-700 hover:bg-white ${
                     isActive ? "text-[#4335A7]" : ""
@@ -75,7 +75,7 @@ const Navbar = () => {
                 Available Cars
               </NavLink>
               <NavLink
-                to="/add_Car"
+                to="/add_car"
                 className={({ isActive }) =>
                   `text-md font-semibold hover:text-red-700 hover:bg-white ${
                     isActive ? "text-[#4335A7]" : ""
@@ -85,7 +85,7 @@ const Navbar = () => {
                 Add Car
               </NavLink>
               <NavLink
-                to="/my_Cars"
+                to="/my_cars"
                 className={({ isActive }) =>
                   `text-md font-semibold hover:text-red-700 hover:bg-white ${
                     isActive ? "text-[#4335A7]" : ""
@@ -95,7 +95,7 @@ const Navbar = () => {
                 My Cars
               </NavLink>
               <NavLink
-                to="/my_Bookings"
+                to="/my_bookings"
                 className={({ isActive }) =>
                   `text-md font-semibold hover:text-red-700 hover:bg-white ${
                     isActive ? "text-[#4335A7]" : ""
@@ -124,7 +124,7 @@ const Navbar = () => {
               Home
             </NavLink>
             <NavLink
-              to="/available_Cars"
+              to="/available_cars"
               className={({ isActive }) =>
                 `text-md font-semibold hover:text-red-700 hover:bg-white ${
                   isActive ? "text-[#4335A7]" : ""
@@ -134,7 +134,7 @@ const Navbar = () => {
               Available Cars
             </NavLink>
             <NavLink
-              to="/add_Car"
+              to="/add_car"
               className={({ isActive }) =>
                 `text-md font-semibold hover:text-red-700 hover:bg-white ${
                   isActive ? "text-[#4335A7]" : ""
@@ -144,7 +144,7 @@ const Navbar = () => {
               Add Car
             </NavLink>
             <NavLink
-              to="/my_Cars"
+              to="/my_cars"
               className={({ isActive }) =>
                 `text-md font-semibold hover:text-red-700 hover:bg-white ${
                   isActive ? "text-[#4335A7]" : ""
@@ -154,7 +154,7 @@ const Navbar = () => {
               My Cars
             </NavLink>
             <NavLink
-              to="/my_Bookings"
+              to="/my_bookings"
               className={({ isActive }) =>
                 `text-md font-semibold hover:text-red-700 hover:bg-white ${
                   isActive ? "text-[#4335A7]" : ""
