@@ -63,7 +63,7 @@ const AddCar = () => {
   };
 
   return (
-    <div className="mt-4 mb-4">
+    <div className="mb-4">
       <form
         onSubmit={handleAddCars}
         className="p-3 space-y-4 bg-white shadow-lg rounded-md"

@@ -47,7 +47,7 @@ const SpecialOffers = () => {
   ];
 
   return (
-    <div className="p-4">
+    <div className="p-2">
       <div className="text-center mb-4">
         <h1 className="text-3xl font-bold mb-4 text-gray-800">
           Special Offers

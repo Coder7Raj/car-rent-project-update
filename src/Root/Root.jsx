@@ -5,11 +5,11 @@ import { Outlet } from "react-router-dom";
 
 const Root = () => {
   return (
-    <div>
+    <div className="lg:max-w-[1024px] md:max-w-[768px] max-w-[425px] mx-auto">
       <header className="h-16">
         <Navbar></Navbar>
       </header>
-      <main className="min-h-[calc(100vh-285px)] lg:max-w-[1024px] md:max-w-[768px] max-w-[425px] mx-auto bg-gray-300 bg-opacity-30">
+      <main className="min-h-[calc(100vh-285px)] bg-gray-200">
         <Outlet></Outlet>
       </main>
 

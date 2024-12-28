@@ -15,6 +15,7 @@ import Banner from "./components/Banner";
 import CarDetails from "./pages/CarDetails";
 import Error from "./pages/Error";
 import UpdateMyCar from "./pages/UpdateMyCar";
+import PrivateRoute from "./Root/PrivateRoute";
 
 const router = createBrowserRouter([
   {
@@ -39,17 +40,29 @@ const router = createBrowserRouter([
 
       {
         path: "car_details/:id",
-        element: <CarDetails></CarDetails>,
+        element: (
+          <PrivateRoute>
+            <CarDetails></CarDetails>
+          </PrivateRoute>
+        ),
         loader: ({ params }) =>
           fetch(`http://localhost:5000/allCars/${params.id}`),
       },
       {
         path: "add_car",
-        element: <AddCar></AddCar>,
+        element: (
+          <PrivateRoute>
+            <AddCar></AddCar>
+          </PrivateRoute>
+        ),
       },
       {
         path: "my_cars",
-        element: <MyCars></MyCars>,
+        element: (
+          <PrivateRoute>
+            <MyCars></MyCars>
+          </PrivateRoute>
+        ),
       },
       {
         path: "update_my_car/:id",
@@ -60,7 +73,11 @@ const router = createBrowserRouter([
 
       {
         path: "my_bookings",
-        element: <MyBookings></MyBookings>,
+        element: (
+          <PrivateRoute>
+            <MyBookings></MyBookings>
+          </PrivateRoute>
+        ),
       },
       {
         path: "login",

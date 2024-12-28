@@ -18,7 +18,7 @@ const Register = () => {
       Swal.fire({
         position: "top-end",
         icon: "success",
-        title: "Successfully LoggedIn by Google",
+        title: "Successfully LoggedIn.",
         showConfirmButton: false,
         timer: 1500,
       });
