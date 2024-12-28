@@ -71,7 +71,7 @@ const UpdateMyCar = () => {
     <div className="mt-4 mb-4">
       <form
         onSubmit={handleUpdatedCar}
-        className="p-6 space-y-4 bg-white shadow-lg rounded-md"
+        className="p-3 space-y-4 bg-white shadow-lg rounded-md"
       >
         <h2 className="text-2xl font-bold text-center">Add a New Car</h2>
 

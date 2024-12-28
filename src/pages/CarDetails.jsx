@@ -37,13 +37,13 @@ const CarDetails = () => {
       .then((res) => res.json())
       .then((data) => {
         if (data.message) {
-          Swal.fire("This review already in watchlist");
+          Swal.fire("This review already in bookList");
         }
         if (data.insertedId) {
-          Swal.fire("Successfully added to GameWatchlist");
+          Swal.fire("Successfully added to GameBookList");
         }
       })
-      .catch((error) => console.error("Error adding to watchlist:", error));
+      .catch((error) => console.error("Error adding to bookList:", error));
     //
   };
   return (
