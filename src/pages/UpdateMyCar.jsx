@@ -42,11 +42,14 @@ const UpdateMyCar = () => {
       });
 
       if (result.isConfirmed) {
-        const response = await fetch(`http://localhost:5000/allCars/${_id}`, {
-          method: "PUT",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(updatedReview),
-        });
+        const response = await fetch(
+          `https://car-rent-server-wine.vercel.app/allCars/${_id}`,
+          {
+            method: "PUT",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(updatedReview),
+          }
+        );
 
         const data = await response.json();
         if (data.modifiedCount > 0) {

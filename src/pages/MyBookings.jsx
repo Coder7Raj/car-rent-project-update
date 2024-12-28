@@ -10,7 +10,9 @@ const MyBookings = () => {
   useEffect(() => {
     if (user?.email) {
       setLoading(true);
-      fetch(`http://localhost:5000/bookLists?email=${user.email}`)
+      fetch(
+        `https://car-rent-server-wine.vercel.app/bookLists?email=${user.email}`
+      )
         .then((res) => res.json())
         .then((data) => setBookLists(data))
         .catch((err) => console.error(err));
@@ -28,7 +30,7 @@ const MyBookings = () => {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`http://localhost:5000/bookList/${id}`, {
+        fetch(`https://car-rent-server-wine.vercel.app/bookList/${id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())

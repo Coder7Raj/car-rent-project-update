@@ -4,7 +4,7 @@ import AllCars from "./AllCars";
 const AvailableCars = () => {
   const [allCars, setAllCars] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/allCars")
+    fetch("https://car-rent-server-wine.vercel.app/allCars")
       .then((res) => res.json())
       .then((data) => setAllCars(data))
       .catch((err) => {

@@ -32,7 +32,7 @@ const AddCar = () => {
       email,
     };
 
-    fetch("http://localhost:5000/allCars", {
+    fetch("https://car-rent-server-wine.vercel.app/allCars", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

@@ -31,7 +31,7 @@ const CarDetails = () => {
       Swal.fire("This car is not available for booking.");
       return;
     }
-    fetch(`http://localhost:5000/bookList/${_id}`, {
+    fetch(`https://car-rent-server-wine.vercel.app/bookList/${_id}`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

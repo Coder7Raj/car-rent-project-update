@@ -8,10 +8,13 @@ const MyCars = () => {
 
   useEffect(() => {
     if (user?.email) {
-      fetch(`http://localhost:5000/myCars?email=${user.email}`, {
-        method: "GET",
-        headers: { "Content-Type": "application/json" },
-      })
+      fetch(
+        `https://car-rent-server-wine.vercel.app/myCars?email=${user.email}`,
+        {
+          method: "GET",
+          headers: { "Content-Type": "application/json" },
+        }
+      )
         .then((res) => res.json())
         .then((data) => {
           setCars(data);

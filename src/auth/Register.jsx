@@ -52,7 +52,7 @@ const Register = () => {
           const createdUser = result?.user?.metadata?.creationTime;
           const newUser = { name, email, createdUser };
 
-          fetch("http://localhost:5000/users", {
+          fetch("https://car-rent-server-wine.vercel.app/users", {
             method: "POST",
             headers: {
               "content-type": "application/json",

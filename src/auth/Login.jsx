@@ -34,7 +34,7 @@ const Login = () => {
         if (result?.user) {
           const lastSignInTime = result?.user?.metadata?.lastSignInTime;
           const signInInfo = { email, lastSignInTime };
-          fetch("http://localhost:5000/users", {
+          fetch("https://car-rent-server-wine.vercel.app/users", {
             method: "PATCH",
             headers: {
               "content-type": "application/json",
