@@ -51,7 +51,7 @@ const CarDetails = () => {
     //
   };
   return (
-    <div className="flex flex-col justify-center items-center min-h-screen bg-gray-50 py-10 px-4">
+    <div className="flex flex-col justify-center items-center min-h-screen py-10 px-4">
       <div className="text-center mb-6">
         <h1 className="text-3xl font-bold text-gray-800">Car Details</h1>
         <p className="text-sm text-gray-500">

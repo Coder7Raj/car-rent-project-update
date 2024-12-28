@@ -29,13 +29,13 @@ const MyCars = () => {
         vehicles <br /> you've added, manage your collection, and revisit your
         top choices anytime.
       </p>
-      <div className="mb-3 mt-3 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 px-2 gap-3">
+      <div className="mt-3 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 p-2 gap-3">
         {cars.length > 0 ? (
           cars.map((car) => (
             <MyCarsCard key={car._id} car={car} setCars={setCars} />
           ))
         ) : (
-          <p>No Cars Added</p>
+          <p className="text-center">No Cars Added</p>
         )}
       </div>
     </div>

@@ -5,16 +5,16 @@ import { Outlet } from "react-router-dom";
 
 const Root = () => {
   return (
-    <div className="lg:max-w-[1024px] md:max-w-[768px] max-w-[425px] mx-auto">
+    <div className="lg:max-w-[1024px] md:max-w-[768px] max-w-[425px] mx-auto overflow-y-auto">
       <header className="h-16">
-        <Navbar></Navbar>
+        <Navbar />
       </header>
       <main className="min-h-[calc(100vh-285px)] bg-gray-200">
-        <Outlet></Outlet>
+        <Outlet />
       </main>
 
       <footer>
-        <Footer></Footer>
+        <Footer />
       </footer>
     </div>
   );
