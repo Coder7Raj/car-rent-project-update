@@ -50,12 +50,12 @@ const MyBookings = () => {
     });
   };
   return (
-    <div>
+    <div className="p-2">
       {bookLists?.length > 0 ? (
         bookLists?.map((bookList) => (
           <div
             key={bookList._id}
-            className="shadow-md rounded-md py-1 lg:px-10 md:px-8 px-2"
+            className="shadow-md rounded-md py-1 lg:px-10 md:px-8 px-2 bg-white mb-2"
           >
             <div className="flex lg:flex-row md:flex-row flex-col justify-between items-center gap-2">
               <div className="flex lg:flex-row md:flex-row flex-col gap-6 justify-between items-center">

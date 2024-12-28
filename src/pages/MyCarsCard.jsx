@@ -44,30 +44,6 @@ const MyCarsCard = ({ car, setCars }) => {
     });
   };
   return (
-    // <div className="flex flex-col h-full overflow-hidden shadow-md rounded-md">
-    //   <div>
-    //     <img className="w-full h-[180px]" src={image} alt={name} />
-    //   </div>
-    //   <div className="flex-1 p-2">
-    //     <h1>Name:{name}</h1>
-    //     <p>Model: {model}</p>
-    //     <p>PricePerDay: {pricePerDay}</p>
-    //     <p>Availability: {availability ? "Available" : "Unavailable"}</p>
-    //     <p>Features: {features.length}</p>
-    //     <p>Description: {description}</p>
-    //   </div>
-    //   <div className="p-2 flex justify-between gap-4 mt-auto">
-    //     <Link to={`/update_my_car/${_id}`}>
-    //       <button className="btn btn-outline btn-primary">Update</button>
-    //     </Link>
-    //     <button
-    //       className="btn btn-outline btn-primary"
-    //       onClick={() => handleDeleteAddedCar(_id)}
-    //     >
-    //       Delete
-    //     </button>
-    //   </div>
-    // </div>
     <div className="flex flex-col h-full overflow-hidden shadow-lg rounded-lg bg-gradient-to-b from-blue-50 to-blue-100 transition-transform transform hover:scale-105">
       <div className="relative">
         <img

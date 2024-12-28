@@ -9,7 +9,7 @@ const Root = () => {
       <header className="h-16">
         <Navbar></Navbar>
       </header>
-      <main className="min-h-[calc(100vh-285px)] lg:max-w-[1024px] md:max-w-[768px] max-w-[425px] mx-auto">
+      <main className="min-h-[calc(100vh-285px)] lg:max-w-[1024px] md:max-w-[768px] max-w-[425px] mx-auto bg-gray-300 bg-opacity-30">
         <Outlet></Outlet>
       </main>
 

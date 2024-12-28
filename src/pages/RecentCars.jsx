@@ -16,11 +16,12 @@ const RecentCars = () => {
           Recently Added Cars
         </h1>
         <p className="text-gray-600">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum <br />
-          corporis maxime quisquam. Sint aperiam sequi ipsa necessitatibus quos!
+          Explore our collection of recently added cars, featuring the latest
+          models and innovations in <br /> style, comfort, and performance.
+          Don't miss the chance to drive your dream car today!
         </p>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-3 bg-gray-100 p-3">
+      <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-3 p-3">
         {cars?.slice(0, 6).map((car) => (
           <Cars key={car._id} car={car}></Cars>
         ))}

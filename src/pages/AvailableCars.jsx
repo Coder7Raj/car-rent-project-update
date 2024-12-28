@@ -13,7 +13,7 @@ const AvailableCars = () => {
   }, []);
   return (
     <div>
-      <h1 className="text-2xl font-bold text-center mt-2 mb-3">All Cars</h1>
+      <h1 className="text-2xl font-bold text-center pt-2 mb-3">All Cars</h1>
       <p className="text-gray-600 text-center">
         Explore our extensive collection of vehicles designed to meet <br />
         every need and lifestyle.

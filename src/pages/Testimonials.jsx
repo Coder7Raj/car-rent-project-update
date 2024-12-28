@@ -71,7 +71,7 @@ const Testimonials = () => {
             justifyContent: "flex-start",
             alignItems: "center",
           }}
-          className="overflow-hidden p-3 bg-gray-100"
+          className="overflow-hidden p-3"
         >
           {testimonials.map((testimonial) => (
             <div

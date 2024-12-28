@@ -27,6 +27,10 @@ const CarDetails = () => {
   };
 
   const handleCarBooking = () => {
+    if (!availability) {
+      Swal.fire("This car is not available for booking.");
+      return;
+    }
     fetch(`http://localhost:5000/bookList/${_id}`, {
       method: "POST",
       headers: {
@@ -37,10 +41,10 @@ const CarDetails = () => {
       .then((res) => res.json())
       .then((data) => {
         if (data.message) {
-          Swal.fire("This review already in bookList");
+          Swal.fire("This car already booked.");
         }
         if (data.insertedId) {
-          Swal.fire("Successfully added to GameBookList");
+          Swal.fire("Successfully booking the car.");
         }
       })
       .catch((error) => console.error("Error adding to bookList:", error));

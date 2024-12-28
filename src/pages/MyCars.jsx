@@ -21,7 +21,14 @@ const MyCars = () => {
   }, [user]);
   return (
     <div>
-      <p className="text-2xl font-bold text-center mt-3 mb-6">My Added Cars</p>
+      <p className="text-2xl text-gray-800 font-bold text-center p-3">
+        My Added Cars
+      </p>
+      <p className="text-gray-500 text-center mb-6">
+        Keep track of your favorite cars in one place! Explore the list of
+        vehicles <br /> you've added, manage your collection, and revisit your
+        top choices anytime.
+      </p>
       <div className="mb-3 mt-3 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 px-2 gap-3">
         {cars.length > 0 ? (
           cars.map((car) => (

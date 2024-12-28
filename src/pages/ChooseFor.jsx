@@ -41,7 +41,7 @@ const ChooseFor = () => {
           customer support. Drive with confidence!
         </p>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3 p-3 bg-gray-100">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3 p-3">
         {points.map((point) => (
           <div
             key={point.id}
