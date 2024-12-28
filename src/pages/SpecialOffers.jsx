@@ -9,21 +9,19 @@ const SpecialOffers = () => {
       title: "Luxury Cars at 20% Off",
       description: "Drive premium luxury cars at an unbeatable price.",
       image:
-        "https://static.vecteezy.com/system/resources/previews/041/873/240/non_2x/car-rental-promotion-social-media-post-banner-template-vector.jpg",
+        "https://i.postimg.cc/cC0M6K6b/2025-toyota-sienna-101-66e974c447a4b.jpg",
     },
     {
       id: 2,
       title: "Weekend Special - SUV Rentals",
       description: "Rent an SUV and enjoy unlimited mileage this weekend!",
-      image:
-        "https://static.vecteezy.com/system/resources/previews/041/873/240/non_2x/car-rental-promotion-social-media-post-banner-template-vector.jpg",
+      image: "https://i.postimg.cc/RZy7KpNf/bmw-750li-xdrive-19-0.jpg",
     },
     {
       id: 3,
       title: "Economy Cars - Save $15/day",
       description: "Affordable and fuel-efficient cars for everyday use.",
-      image:
-        "https://static.vecteezy.com/system/resources/previews/041/873/240/non_2x/car-rental-promotion-social-media-post-banner-template-vector.jpg",
+      image: "https://i.postimg.cc/brykpKBX/front-left-side-47.jpg",
     },
     {
       id: 4,
@@ -31,21 +29,20 @@ const SpecialOffers = () => {
       description:
         "Navigate easily with a free GPS on all rentals above 2 days.",
       image:
-        "https://static.vecteezy.com/system/resources/previews/041/873/240/non_2x/car-rental-promotion-social-media-post-banner-template-vector.jpg",
+        "https://i.postimg.cc/V6Lk6mmF/9e5cd1c3ac45fd95a4bf1aa59de7a5e0.jpg",
     },
     {
       id: 5,
       title: "Family Van Discounts",
       description: "Perfect for family trips – Get 25% off on vans.",
-      image:
-        "https://static.vecteezy.com/system/resources/previews/041/873/240/non_2x/car-rental-promotion-social-media-post-banner-template-vector.jpg",
+      image: "https://i.postimg.cc/N0RHTshq/1608-Kia-Niro-06-jpg.webp",
     },
     {
       id: 6,
       title: "Long-Term Rentals - 30% Off",
       description: "Great savings on rentals for 7 days or more.",
       image:
-        "https://static.vecteezy.com/system/resources/previews/041/873/240/non_2x/car-rental-promotion-social-media-post-banner-template-vector.jpg",
+        "https://i.postimg.cc/TPvyTzKk/2023-honda-accord-hybrid-touring-lt-intro-389-654292a591345.jpg",
     },
   ];
 

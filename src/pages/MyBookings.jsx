@@ -72,11 +72,16 @@ const MyBookings = () => {
                 <div className="flex flex-col gap-3 justify-start items-start">
                   <p className="text-md font-semibold">
                     Title:
-                    <span className="text-md font-semibold text-gray-800">
+                    <span className="text-md font-semibold text-gray-600">
                       {bookList.name}
                     </span>
                   </p>
-                  <p>Lorem ipsum dolor sit amet.</p>
+                  <p className="text-md font-semibold">
+                    Model:
+                    <span className="text-md font-semibold text-gray-600">
+                      {bookList.model}
+                    </span>
+                  </p>
                 </div>
               </div>
               <div className="lg:w-auto md:w-auto w-full">

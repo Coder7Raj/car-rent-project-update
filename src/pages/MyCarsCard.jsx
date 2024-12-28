@@ -44,24 +44,68 @@ const MyCarsCard = ({ car, setCars }) => {
     });
   };
   return (
-    <div className="flex flex-col h-full overflow-hidden shadow-md rounded-md">
-      <div>
-        <img className="w-full h-[180px]" src={image} alt={name} />
+    // <div className="flex flex-col h-full overflow-hidden shadow-md rounded-md">
+    //   <div>
+    //     <img className="w-full h-[180px]" src={image} alt={name} />
+    //   </div>
+    //   <div className="flex-1 p-2">
+    //     <h1>Name:{name}</h1>
+    //     <p>Model: {model}</p>
+    //     <p>PricePerDay: {pricePerDay}</p>
+    //     <p>Availability: {availability ? "Available" : "Unavailable"}</p>
+    //     <p>Features: {features.length}</p>
+    //     <p>Description: {description}</p>
+    //   </div>
+    //   <div className="p-2 flex justify-between gap-4 mt-auto">
+    //     <Link to={`/update_my_car/${_id}`}>
+    //       <button className="btn btn-outline btn-primary">Update</button>
+    //     </Link>
+    //     <button
+    //       className="btn btn-outline btn-primary"
+    //       onClick={() => handleDeleteAddedCar(_id)}
+    //     >
+    //       Delete
+    //     </button>
+    //   </div>
+    // </div>
+    <div className="flex flex-col h-full overflow-hidden shadow-lg rounded-lg bg-gradient-to-b from-blue-50 to-blue-100 transition-transform transform hover:scale-105">
+      <div className="relative">
+        <img
+          className="w-full h-[180px] object-cover rounded-t-lg"
+          src={image}
+          alt={name}
+        />
+        <div className="absolute top-2 left-2 bg-blue-500 text-white text-xs px-2 py-1 rounded-full">
+          {availability ? "Available" : "Unavailable"}
+        </div>
       </div>
-      <div className="flex-1 p-2">
-        <h1>Name:{name}</h1>
-        <p>Model: {model}</p>
-        <p>PricePerDay: {pricePerDay}</p>
-        <p>Availability: {availability ? "Available" : "Unavailable"}</p>
-        <p>Features: {features.length}</p>
-        <p>Description: {description}</p>
+      <div className="flex-1 p-4 space-y-3">
+        <h1 className="text-lg font-semibold text-gray-800">Name: {name}</h1>
+        <p className="text-sm text-gray-700">
+          Model: <span className="font-medium">{model}</span>
+        </p>
+        <p className="text-sm text-gray-700">
+          Price Per Day:{" "}
+          <span className="font-bold text-green-600">${pricePerDay}</span>
+        </p>
+        <div>
+          <h2 className="text-sm font-medium text-gray-800">Top Features:</h2>
+          <ul className="list-disc list-inside text-sm text-gray-700">
+            {features.slice(0, 3).map((feature, index) => (
+              <li key={index}>{feature}</li>
+            ))}
+          </ul>
+        </div>
+        <p className="text-sm text-gray-600">Description: {description}</p>
       </div>
-      <div className="p-2 flex justify-between gap-4 mt-auto">
+      <div className="p-4 flex flex-col justify-between gap-4 mt-auto">
         <Link to={`/update_my_car/${_id}`}>
-          <button className="btn btn-outline btn-primary">Update</button>
+          <button className="btn btn-outline btn-primary hover:bg-blue-500 hover:text-white transition-all w-full">
+            Update
+          </button>
         </Link>
         <button
-          className="btn btn-outline btn-primary"
+          className="btn btn-outline btn-danger hover:bg-red-500 hover:text-white transition-all w-full"
           onClick={() => handleDeleteAddedCar(_id)}
         >
           Delete

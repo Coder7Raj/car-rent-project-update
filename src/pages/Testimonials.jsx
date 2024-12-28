@@ -6,48 +6,47 @@ const Testimonials = () => {
     {
       id: 1,
       image:
-        "https://p7.hiclipart.com/preview/481/915/760/computer-icons-user-avatar-woman-avatar.jpg",
-      email: "john.doe@example.com",
+        "https://i.postimg.cc/PfCdF6xN/happy-man-ai-generated-portrait-user-profile-1119669-1.jpg",
+      email: "johndoe@example.com",
       feedback:
         "This car rental service is amazing! The cars are in great condition, and the process was super smooth.",
     },
     {
       id: 2,
-      image:
-        "https://p7.hiclipart.com/preview/481/915/760/computer-icons-user-avatar-woman-avatar.jpg",
-      email: "jane.smith@example.com",
+      image: "https://i.postimg.cc/cHV2zB98/image.jpg",
+      email: "janesmith@example.com",
       feedback:
         "I had a wonderful experience renting from here. Highly recommend it to everyone!",
     },
     {
       id: 3,
       image:
-        "https://p7.hiclipart.com/preview/481/915/760/computer-icons-user-avatar-woman-avatar.jpg",
-      email: "alex.jones@example.com",
+        "https://i.postimg.cc/KvhCrQ36/d9729c556e9e19d7ddf2bd12dd5df71a.jpg",
+      email: "alexjones@example.com",
       feedback:
         "Great service and excellent cars. I will definitely use their service again.",
     },
     {
       id: 4,
       image:
-        "https://p7.hiclipart.com/preview/481/915/760/computer-icons-user-avatar-woman-avatar.jpg",
-      email: "sara.williams@example.com",
+        "https://i.postimg.cc/gJRNxFsn/large-plan-portrait-young-man-with-glasses-with-his-tongue-stuck-out-150254-966.jpg",
+      email: "sarawilliams@example.com",
       feedback:
         "The booking process was so easy, and the staff was very helpful. Thank you!",
     },
     {
       id: 5,
       image:
-        "https://p7.hiclipart.com/preview/481/915/760/computer-icons-user-avatar-woman-avatar.jpg",
-      email: "michael.brown@example.com",
+        "https://i.postimg.cc/pXBcQvHj/indoor-shot-serious-man-with-grumpy-expression-being-discontent-with-noisy-neighbours-dressed-casual.jpg",
+      email: "michaelbrown@example.com",
       feedback:
         "Affordable prices and top-notch vehicles. I couldn’t ask for more!",
     },
     {
       id: 6,
       image:
-        "https://p7.hiclipart.com/preview/481/915/760/computer-icons-user-avatar-woman-avatar.jpg",
-      email: "linda.green@example.com",
+        "https://i.postimg.cc/85rnLrpk/photo-1633332755192-727a05c4013d-fm-jpg-q-60-w-3000-ixlib-rb-4-0.jpg",
+      email: "lindagreen@example.com",
       feedback:
         "This is the best car rental experience I have ever had. Highly satisfied!",
     },

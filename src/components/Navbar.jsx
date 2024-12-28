@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import { FaRegUserCircle } from "react-icons/fa";
 import { AuthContext } from "../auth/AuthProvider/AuthProvider";
+import logo from "../assets/mainLogo.jpg";
 
 const Navbar = () => {
   const { user, logoutUser, handleGoogleSignOut } = useContext(AuthContext);
@@ -107,8 +108,8 @@ const Navbar = () => {
             </ul>
           </div>
           <NavLink to="/" className="flex text-xl font-semibold">
-            {/* <img className="lg:w-8 w-6 rounded-[50%]" src={logo} alt="" /> */}
-            GameHive
+            <img className="lg:w-8 w-6 rounded-[50%]" src={logo} alt="" />
+            MotorVista
           </NavLink>
         </div>
         <div className="navbar-center hidden lg:flex">

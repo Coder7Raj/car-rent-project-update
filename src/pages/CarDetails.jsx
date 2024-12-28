@@ -1,7 +1,6 @@
 import React, { useContext } from "react";
 import { Link, useLoaderData } from "react-router-dom";
 import { AuthContext } from "../auth/AuthProvider/AuthProvider";
-import { div } from "framer-motion/client";
 import { FaArrowLeft } from "react-icons/fa";
 import Swal from "sweetalert2";
 
@@ -23,6 +22,7 @@ const CarDetails = () => {
     image,
     name,
     id: _id,
+    model,
     userEmail: user?.email,
   };
 
@@ -76,13 +76,13 @@ const CarDetails = () => {
             >
               {features?.map((feature, index) => (
                 <li key={index}>
-                  {typeof feature === "object" ? feature.name : feature}
+                  {typeof feature === "object" ? feature?.name : feature}
                 </li>
               ))}
             </ol>
           </div>
           <p className="text-gray-700">
-            <span className="font-medium">Availability:</span>{" "}
+            <span className="font-medium">Availability:</span>
             {availability ? "Available" : "Unavailable"}
           </p>
           <p className="text-gray-700">

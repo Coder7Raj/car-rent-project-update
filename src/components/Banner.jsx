@@ -6,24 +6,24 @@ const Banner = () => {
       id: 1,
       src: "https://i.postimg.cc/5tVJVmt8/image.jpg",
       alt: "Slide 1",
-      title: "Discover Amazing Games",
-      description: "Explore the latest game reviews and updates.",
+      title: "Your Journey, Your Choice",
+      description: "Embark on your next adventure with confidence.",
       buttonText: "Learn More",
     },
     {
       id: 2,
       src: "https://i.postimg.cc/4d8RpkQ1/milton-keynes-bucks-uk-april-260nw-2146087283.jpg",
       alt: "Slide 2",
-      title: "Join the Adventure",
-      description: "Step into the world of immersive gaming.",
+      title: "Discover the Amazing Cars",
+      description: "Dive into a world of innovation and style.",
       buttonText: "Get Started",
     },
     {
       id: 3,
       src: "https://i.postimg.cc/vHxwxKgW/yellow-car-gas-station-23-2150697544.jpg",
       alt: "Slide 3",
-      title: "Stay Ahead of the Game",
-      description: "Get the latest news and trends in gaming.",
+      title: "Unleash the Power of Performance",
+      description: "Get the latest news and trends in Cars.",
       buttonText: "Subscribe Now",
     },
   ];
@@ -49,7 +49,7 @@ const Banner = () => {
             backgroundImage: `url(${slide.src})`,
           }}
         >
-          <div className="bg-black bg-opacity-50 p-4 rounded-lg text-center shadow-md">
+          <div className="bg-black bg-opacity-40 p-4 rounded-lg text-center shadow-md">
             <h2 className="text-2xl md:text-4xl font-bold mb-2">
               {slide.title}
             </h2>
