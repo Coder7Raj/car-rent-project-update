@@ -54,7 +54,7 @@ const Testimonials = () => {
 
   return (
     <div>
-      <div className="text-center mb-8">
+      <div className="text-center mb-6">
         <h2 className="text-3xl text-gray-100 font-bold mb-4 mt-16">
           Testimonials
         </h2>
@@ -78,18 +78,18 @@ const Testimonials = () => {
           {testimonials.map((testimonial) => (
             <div
               key={testimonial.id}
-              className="bg-white shadow-lg rounded-lg p-6 h-60 w-72"
+              className="bg-gray-300 shadow-xl rounded-lg p-6 h-80 w-72 transform transition-all hover:scale-105 hover:shadow-2xl"
             >
               <img
                 src={testimonial.image}
                 alt="User"
-                className="w-16 h-16 rounded-full mx-auto mb-4"
+                className="w-24 h-24 rounded-full mx-auto mb-6 border-4 border-white"
               />
-              <p className="text-center text-gray-700 font-medium">
+              <p className="text-center text-black font-semibold text-lg">
                 {testimonial.email}
               </p>
-              <p className="text-center text-gray-500 mt-4">
-                {testimonial.feedback}
+              <p className="text-center text-black opacity-80 mt-4">
+                "{testimonial.feedback}"
               </p>
             </div>
           ))}
