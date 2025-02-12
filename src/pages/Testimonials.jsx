@@ -55,8 +55,10 @@ const Testimonials = () => {
   return (
     <div>
       <div className="text-center mb-8">
-        <h2 className="text-3xl font-bold mb-6 mt-10">Testimonials</h2>
-        <p className="text-gray-600">
+        <h2 className="text-3xl text-gray-100 font-bold mb-4 mt-16">
+          Testimonials
+        </h2>
+        <p className="text-gray-300">
           Discover why our customers love us! From seamless booking to top-notch
           cars, <br /> hear directly from our satisfied users about their
           incredible experiences.

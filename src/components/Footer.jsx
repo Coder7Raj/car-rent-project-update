@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="lg:max-w-[1024px] md:max-w-[768px] max-w-[425px] mx-auto">
+    <div className="lg:max-w-[1200px] md:max-w-[768px] max-w-[425px] mx-auto">
       <footer className="footer bg-base-200 text-base-content p-10">
         <nav>
           <h6 className="footer-title">Services</h6>

@@ -11,11 +11,11 @@ const RecentCars = () => {
   }, []);
   return (
     <div>
-      <div className="text-center mb-6 mt-10">
-        <h1 className="text-3xl text-gray-800 font-semibold mb-2">
+      <div className="text-center mb-6 mt-16">
+        <h1 className="text-3xl text-gray-100 font-semibold mb-2">
           Recently Added Cars
         </h1>
-        <p className="text-gray-600">
+        <p className="text-gray-300">
           Explore our collection of recently added cars, featuring the latest
           models and innovations in <br /> style, comfort, and performance.
           Don't miss the chance to drive your dream car today!

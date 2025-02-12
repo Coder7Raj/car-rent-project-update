@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
-import { Link, NavLink, useNavigate } from "react-router-dom";
 import { FaRegUserCircle } from "react-icons/fa";
-import { AuthContext } from "../auth/AuthProvider/AuthProvider";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import logo from "../assets/mainLogo.jpg";
+import { AuthContext } from "../auth/AuthProvider/AuthProvider";
 
 const Navbar = () => {
   const { user, logoutUser, handleGoogleSignOut } = useContext(AuthContext);
@@ -27,7 +27,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar">
       <div className="navbar-start">
         <div className="dropdown">
           <div

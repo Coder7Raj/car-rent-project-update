@@ -1,5 +1,5 @@
 import React from "react";
-import { FaCar, FaDollarSign, FaRegHandshake, FaHeadset } from "react-icons/fa";
+import { FaCar, FaDollarSign, FaHeadset, FaRegHandshake } from "react-icons/fa";
 
 const ChooseFor = () => {
   const points = [
@@ -31,11 +31,11 @@ const ChooseFor = () => {
 
   return (
     <div>
-      <div className="text-center mb-6 mt-10">
-        <h1 className="text-3xl font-bold mb-4 text-gray-800">
+      <div className="text-center mb-6 mt-16">
+        <h1 className="text-3xl font-bold mb-4 text-gray-100">
           Why Choose Us?
         </h1>
-        <p className="text-gray-600">
+        <p className="text-gray-300">
           Experience unmatched car rental services with a wide variety of
           vehicles, competitive prices, <br /> an easy booking process, and 24/7
           customer support. Drive with confidence!

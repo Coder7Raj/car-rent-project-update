@@ -1,10 +1,10 @@
 import React, { useContext, useEffect, useState } from "react";
+import { FaRegEye, FaRegEyeSlash } from "react-icons/fa";
+import Lottie from "react-lottie-player";
 import { Link, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
-import { FaRegEye, FaRegEyeSlash } from "react-icons/fa";
-import animationData from "/public/loginAnimation.json";
-import Lottie from "react-lottie-player";
 import { AuthContext } from "./AuthProvider/AuthProvider";
+import animationData from "/public/loginAnimation.json";
 
 const Login = () => {
   const { user, loginUser, handleGoogleLogin } = useContext(AuthContext);

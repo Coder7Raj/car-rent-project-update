@@ -1,5 +1,5 @@
-import React from "react";
 import { motion } from "framer-motion";
+import React from "react";
 import Marquee from "react-fast-marquee";
 
 const SpecialOffers = () => {
@@ -34,7 +34,7 @@ const SpecialOffers = () => {
     {
       id: 5,
       title: "Family Van Discounts",
-      description: "Perfect for family trips – Get 25% off on vans.",
+      description: "Perfect for family trips - Get 25% off on vans.",
       image: "https://i.postimg.cc/N0RHTshq/1608-Kia-Niro-06-jpg.webp",
     },
     {
@@ -47,12 +47,12 @@ const SpecialOffers = () => {
   ];
 
   return (
-    <div className="p-2">
+    <div className="p-2 mt-16">
       <div className="text-center mb-4">
-        <h1 className="text-3xl font-bold mb-4 text-gray-800">
+        <h1 className="text-3xl font-bold mb-4 text-gray-100">
           Special Offers
         </h1>
-        <p className="text-gray-600">
+        <p className="text-gray-300">
           Drive your dream car for less! Enjoy discounts on luxury rides, SUVs,
           and family vans, <br /> plus perks like free GPS and unlimited
           mileage. Book now and save big!

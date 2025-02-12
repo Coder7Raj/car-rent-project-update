@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
 const Banner = () => {
   const slides = [
     {
       id: 1,
-      src: "https://i.postimg.cc/5tVJVmt8/image.jpg",
+      src: "https://i.postimg.cc/66ctRRP8/001-2025-bmw-i4-edrive40-lead.jpg",
       alt: "Slide 1",
       title: "Your Journey, Your Choice",
       description: "Embark on your next adventure with confidence.",
