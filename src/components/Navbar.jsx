@@ -27,7 +27,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="navbar">
+    <div className="navbar fixed top-0 left-0 right-0 bg-blur backdrop-blur-md z-50 lg:max-w-[1600px] md:max-w-[768px] max-w-[425px] mx-auto">
       <div className="navbar-start">
         <div className="dropdown">
           <div
@@ -52,13 +52,13 @@ const Navbar = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[30] mt-3 w-52 p-2 shadow flex gap-2"
+            className="menu menu-sm dropdown-content bg-base-300 rounded-box z-50 mt-3 w-52 p-2 shadow flex gap-2"
           >
             <NavLink
               to="/"
               className={({ isActive }) =>
-                `text-md font-semibold hover:text-red-700 hover:bg-white ${
-                  isActive ? "text-[#4335A7]" : ""
+                `text-md font-semibold hover:text-red-700 ${
+                  isActive ? "text-white bg-black p-1 rounded-sm" : "text-black"
                 }`
               }
             >
@@ -67,8 +67,8 @@ const Navbar = () => {
             <NavLink
               to="/available_cars"
               className={({ isActive }) =>
-                `text-md font-semibold hover:text-red-700 hover:bg-white ${
-                  isActive ? "text-[#4335A7]" : ""
+                `text-md font-semibold hover:text-red-700 ${
+                  isActive ? "text-white bg-black p-1 rounded-sm" : "text-black"
                 }`
               }
             >
@@ -77,8 +77,8 @@ const Navbar = () => {
             <NavLink
               to="/add_car"
               className={({ isActive }) =>
-                `text-md font-semibold hover:text-red-700 hover:bg-white ${
-                  isActive ? "text-[#4335A7]" : ""
+                `text-md font-semibold hover:text-red-700 ${
+                  isActive ? "text-white bg-black p-1 rounded-sm" : "text-black"
                 }`
               }
             >
@@ -87,8 +87,8 @@ const Navbar = () => {
             <NavLink
               to="/my_cars"
               className={({ isActive }) =>
-                `text-md font-semibold hover:text-red-700 hover:bg-white ${
-                  isActive ? "text-[#4335A7]" : ""
+                `text-md font-semibold hover:text-red-700 ${
+                  isActive ? "text-white bg-black p-1 rounded-sm" : "text-black"
                 }`
               }
             >
@@ -97,8 +97,8 @@ const Navbar = () => {
             <NavLink
               to="/my_bookings"
               className={({ isActive }) =>
-                `text-md font-semibold hover:text-red-700 hover:bg-white ${
-                  isActive ? "text-[#4335A7]" : ""
+                `text-md font-semibold hover:text-red-700 ${
+                  isActive ? "text-white bg-black p-1 rounded-sm" : "text-black"
                 }`
               }
             >
@@ -116,8 +116,8 @@ const Navbar = () => {
           <NavLink
             to="/"
             className={({ isActive }) =>
-              `text-md font-semibold hover:text-red-700 hover:bg-white ${
-                isActive ? "text-[#4335A7]" : ""
+              `text-md font-semibold hover:text-red-700 ${
+                isActive ? "text-white" : ""
               }`
             }
           >
@@ -126,8 +126,8 @@ const Navbar = () => {
           <NavLink
             to="/available_cars"
             className={({ isActive }) =>
-              `text-md font-semibold hover:text-red-700 hover:bg-white ${
-                isActive ? "text-[#4335A7]" : ""
+              `text-md font-semibold hover:text-red-700 ${
+                isActive ? "text-white" : ""
               }`
             }
           >
@@ -136,8 +136,8 @@ const Navbar = () => {
           <NavLink
             to="/add_car"
             className={({ isActive }) =>
-              `text-md font-semibold hover:text-red-700 hover:bg-white ${
-                isActive ? "text-[#4335A7]" : ""
+              `text-md font-semibold hover:text-red-700 ${
+                isActive ? "text-white" : ""
               }`
             }
           >
@@ -146,8 +146,8 @@ const Navbar = () => {
           <NavLink
             to="/my_cars"
             className={({ isActive }) =>
-              `text-md font-semibold hover:text-red-700 hover:bg-white ${
-                isActive ? "text-[#4335A7]" : ""
+              `text-md font-semibold hover:text-red-700 ${
+                isActive ? "text-white" : ""
               }`
             }
           >
@@ -156,8 +156,8 @@ const Navbar = () => {
           <NavLink
             to="/my_bookings"
             className={({ isActive }) =>
-              `text-md font-semibold hover:text-red-700 hover:bg-white ${
-                isActive ? "text-[#4335A7]" : ""
+              `text-md font-semibold hover:text-red-700 ${
+                isActive ? "text-white" : ""
               }`
             }
           >

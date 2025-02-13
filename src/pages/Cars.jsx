@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Cars = ({ car }) => {
   const { _id, name, image, model, availability } = car;
   return (
-    <div className="border rounded-lg shadow-lg hover:shadow-xl transition duration-300 overflow-hidden bg-gradient-to-r from-blue-50 to-blue-100 animate__animated animate__fadeInUpBig">
+    <div className="border rounded-lg shadow-lg hover:shadow-xl transition duration-300 overflow-hidden bg-white animate__animated animate__fadeInUpBig">
       <img
         src={image}
         alt={name}
