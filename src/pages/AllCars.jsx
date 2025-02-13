@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const AllCars = ({ cars }) => {
   const { _id, name, image, model, availability } = cars;
   return (
-    <div className="border rounded-lg shadow-lg hover:shadow-xl transition duration-300 overflow-hidden bg-gradient-to-r from-blue-50 to-blue-100">
+    <div className="border rounded-lg shadow-lg hover:shadow-xl transition duration-300 overflow-hidden bg-white">
       <img
         src={image}
         alt={name}

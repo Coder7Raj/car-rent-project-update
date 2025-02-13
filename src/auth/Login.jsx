@@ -95,13 +95,15 @@ const Login = () => {
           style={{ width: "100%", height: "100%" }}
         />
       </div>
-      <div className="lg:w-1/2 md:w-1/2 w-full h-auto px-6 py-4 flex flex-col justify-center items-center bg-white shadow-lg rounded-lg">
-        <h2 className="text-3xl font-semibold text-center mb-6">Login</h2>
+      <div className="lg:w-1/2 md:w-1/2 w-full h-auto px-6 py-4 flex flex-col justify-center items-center border border-white shadow-lg rounded-lg">
+        <h2 className="text-3xl text-gray-100 font-semibold text-center mb-6">
+          Login
+        </h2>
         <form onSubmit={handleLogin} className="w-full">
           <div className="mb-6">
             <label
               htmlFor="email"
-              className="block text-base font-medium text-gray-800 mb-2"
+              className="block font-medium text-gray-100 mb-2"
             >
               Email
             </label>
@@ -109,24 +111,24 @@ const Login = () => {
               type="email"
               name="email"
               placeholder="Enter your email"
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
+              className="w-full px-4 py-3 border border-gray-400 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
             />
           </div>
           <div className="mb-6 relative">
-            <label className="block text-base font-medium text-gray-800 mb-2">
+            <label className="block text-base font-medium text-gray-100 mb-2">
               Password
             </label>
             <input
               name="password"
               type={showPassword ? "text" : "password"}
               placeholder="Enter your password"
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
+              className="w-full px-4 py-3 border border-gray-400 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
               required
             />
             <button
               type="button"
               onClick={() => setShowPassword(!showPassword)}
-              className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-600 hover:text-gray-800 pt-7"
+              className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-500 hover:text-gray-800 pt-7"
               aria-label={showPassword ? "Hide password" : "Show password"}
             >
               {showPassword ? <FaRegEye /> : <FaRegEyeSlash />}
@@ -150,8 +152,8 @@ const Login = () => {
             </button>
           </div>
         </form>
-        <p className="text-center text-sm text-gray-700 mt-6">
-          Don’t have an account?{" "}
+        <p className="text-center text-sm text-gray-400 mt-6">
+          Don't have an account?
           <Link to="/register" className="text-blue-600 hover:underline">
             Register
           </Link>

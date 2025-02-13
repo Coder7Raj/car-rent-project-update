@@ -1,10 +1,10 @@
-import React, { useState, useContext, useEffect } from "react";
+import React, { useContext, useEffect, useState } from "react";
+import { FaRegEye, FaRegEyeSlash } from "react-icons/fa";
+import Lottie from "react-lottie-player";
 import { Link, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
-import { FaRegEye, FaRegEyeSlash } from "react-icons/fa";
-import animationData from "/public/registerAnimation.json";
 import { AuthContext } from "./AuthProvider/AuthProvider";
-import Lottie from "react-lottie-player";
+import animationData from "/public/registerAnimation.json";
 
 const Register = () => {
   const { user, registerUser, setUser, handleGoogleLogin, updateUserProfile } =
@@ -89,14 +89,16 @@ const Register = () => {
           style={{ width: "100%", height: "100%" }}
         />
       </div>
-      <div className="lg:w-1/2 md:w-1/2 w-full h-auto px-6 py-4 flex flex-col justify-center items-center bg-white shadow-lg rounded-lg">
-        <h2 className="text-3xl font-semibold text-center mb-6">Register</h2>
+      <div className="lg:w-1/2 md:w-1/2 w-full h-auto px-6 py-4 flex flex-col justify-center items-center border border-white shadow-lg rounded-lg">
+        <h2 className="text-3xl text-gray-100 font-semibold text-center mb-6">
+          Register
+        </h2>
         <form onSubmit={handleRegister} className="w-full">
           {/* Name Field */}
           <div className="mb-6">
             <label
               htmlFor="name"
-              className="block text-base font-medium text-gray-800 mb-2"
+              className="block text-base font-medium text-gray-100 mb-2"
             >
               Name
             </label>
@@ -104,7 +106,7 @@ const Register = () => {
               type="text"
               name="name"
               placeholder="Enter your name"
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
+              className="w-full px-4 py-3 border border-gray-400 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
             />
           </div>
 
@@ -112,7 +114,7 @@ const Register = () => {
           <div className="mb-6">
             <label
               htmlFor="email"
-              className="block text-base font-medium text-gray-800 mb-2"
+              className="block text-base font-medium text-gray-100 mb-2"
             >
               Email
             </label>
@@ -120,7 +122,7 @@ const Register = () => {
               type="email"
               name="email"
               placeholder="Enter your email"
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
+              className="w-full px-4 py-3 border border-gray-400 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
             />
           </div>
 
@@ -128,7 +130,7 @@ const Register = () => {
           <div className="mb-6">
             <label
               htmlFor="photoURL"
-              className="block text-base font-medium text-gray-800 mb-2"
+              className="block text-base font-medium text-gray-100 mb-2"
             >
               Photo URL
             </label>
@@ -136,20 +138,20 @@ const Register = () => {
               type="url"
               name="photoURL"
               placeholder="Enter your photo URL"
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
+              className="w-full px-4 py-3 border border-gray-400 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
             />
           </div>
 
           {/* Password Field */}
           <div className="mb-6 relative">
-            <label className="block text-base font-medium text-gray-800 mb-2">
+            <label className="block text-base font-medium text-gray-100 mb-2">
               Password
             </label>
             <input
               name="password"
               type={showPassword ? "text" : "password"}
               placeholder="Enter your password"
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
+              className="w-full px-4 py-3 border border-gray-400 rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
               required
             />
             <button
@@ -186,7 +188,7 @@ const Register = () => {
         {error && <p className="text-red-600 text-sm">{error}</p>}
 
         {/* Link to Login */}
-        <p className="text-center text-sm text-gray-700 mt-6">
+        <p className="text-center text-sm text-gray-400 mt-6">
           Already have an account?{" "}
           <Link to="/login" className="text-blue-600 hover:underline">
             Login

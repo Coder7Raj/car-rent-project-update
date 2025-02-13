@@ -106,7 +106,7 @@ const Navbar = () => {
             </NavLink>
           </ul>
         </div>
-        <NavLink to="/" className="flex text-xl font-semibold">
+        <NavLink to="/" className="text-white flex text-xl font-semibold">
           <img className="lg:w-8 w-6 rounded-[50%]" src={logo} alt="" />
           MotorVista
         </NavLink>
@@ -116,8 +116,8 @@ const Navbar = () => {
           <NavLink
             to="/"
             className={({ isActive }) =>
-              `text-md font-semibold hover:text-red-700 ${
-                isActive ? "text-white" : ""
+              `text-md font-semibold hover:text-white ${
+                isActive ? "text-white" : "text-primary"
               }`
             }
           >
@@ -126,8 +126,8 @@ const Navbar = () => {
           <NavLink
             to="/available_cars"
             className={({ isActive }) =>
-              `text-md font-semibold hover:text-red-700 ${
-                isActive ? "text-white" : ""
+              `text-md font-semibold hover:text-white ${
+                isActive ? "text-white" : "text-primary"
               }`
             }
           >
@@ -136,8 +136,8 @@ const Navbar = () => {
           <NavLink
             to="/add_car"
             className={({ isActive }) =>
-              `text-md font-semibold hover:text-red-700 ${
-                isActive ? "text-white" : ""
+              `text-md font-semibold hover:text-white ${
+                isActive ? "text-white" : "text-primary"
               }`
             }
           >
@@ -146,8 +146,8 @@ const Navbar = () => {
           <NavLink
             to="/my_cars"
             className={({ isActive }) =>
-              `text-md font-semibold hover:text-red-700 ${
-                isActive ? "text-white" : ""
+              `text-md font-semibold hover:text-white ${
+                isActive ? "text-white" : "text-primary"
               }`
             }
           >
@@ -156,8 +156,8 @@ const Navbar = () => {
           <NavLink
             to="/my_bookings"
             className={({ isActive }) =>
-              `text-md font-semibold hover:text-red-700 ${
-                isActive ? "text-white" : ""
+              `text-md font-semibold hover:text-white ${
+                isActive ? "text-white" : "text-primary"
               }`
             }
           >
