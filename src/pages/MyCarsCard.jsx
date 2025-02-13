@@ -44,7 +44,7 @@ const MyCarsCard = ({ car, setCars }) => {
     });
   };
   return (
-    <div className="flex flex-col h-full overflow-hidden shadow-lg rounded-lg bg-gradient-to-b from-blue-50 to-blue-100 transition-transform transform hover:scale-105">
+    <div className="flex flex-col h-full overflow-hidden shadow-lg rounded-lg bg-white transition-transform transform hover:scale-105">
       <div className="relative">
         <img
           className="w-full h-[180px] object-cover rounded-t-lg"

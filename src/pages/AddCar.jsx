@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
-import { AuthContext } from "../auth/AuthProvider/AuthProvider";
 import Swal from "sweetalert2";
+import { AuthContext } from "../auth/AuthProvider/AuthProvider";
 
 const AddCar = () => {
   const { user } = useContext(AuthContext);
@@ -66,12 +66,17 @@ const AddCar = () => {
     <div className="mb-4">
       <form
         onSubmit={handleAddCars}
-        className="p-3 space-y-4 bg-white shadow-lg rounded-md"
+        className="p-3 space-y-4 shadow-lg rounded-md"
       >
-        <h2 className="text-2xl font-bold text-center">Add a New Car</h2>
+        <h2 className="text-2xl text-gray-100 font-bold text-center">
+          Add a New Car
+        </h2>
 
         <div className="space-y-2">
-          <label className="block text-sm font-semibold" htmlFor="name">
+          <label
+            className="block text-white text-sm font-semibold"
+            htmlFor="name"
+          >
             Car Name
           </label>
           <input
@@ -84,7 +89,10 @@ const AddCar = () => {
         </div>
 
         <div className="space-y-2">
-          <label className="block text-sm font-semibold" htmlFor="image">
+          <label
+            className="block text-white text-sm font-semibold"
+            htmlFor="image"
+          >
             Car Image URL
           </label>
           <input
@@ -97,7 +105,10 @@ const AddCar = () => {
         </div>
 
         <div className="space-y-2">
-          <label className="block text-sm font-semibold" htmlFor="model">
+          <label
+            className="block text-white text-sm font-semibold"
+            htmlFor="model"
+          >
             Model
           </label>
           <input
@@ -110,7 +121,10 @@ const AddCar = () => {
         </div>
 
         <div className="space-y-2">
-          <label className="block text-sm font-semibold" htmlFor="pricePerDay">
+          <label
+            className="block text-white text-sm font-semibold"
+            htmlFor="pricePerDay"
+          >
             Price Per Day
           </label>
           <input
@@ -123,7 +137,10 @@ const AddCar = () => {
         </div>
 
         <div className="space-y-2">
-          <label className="block text-sm font-semibold" htmlFor="availability">
+          <label
+            className="block text-white text-sm font-semibold"
+            htmlFor="availability"
+          >
             Availability
           </label>
           <select
@@ -162,7 +179,10 @@ const AddCar = () => {
         </div>
 
         <div className="space-y-2">
-          <label className="block text-sm font-semibold" htmlFor="description">
+          <label
+            className="block text-white text-sm font-semibold"
+            htmlFor="description"
+          >
             Description
           </label>
           <textarea
@@ -175,7 +195,10 @@ const AddCar = () => {
         </div>
 
         <div className="space-y-2">
-          <label className="block text-sm font-semibold" htmlFor="email">
+          <label
+            className="block text-white text-sm font-semibold"
+            htmlFor="email"
+          >
             User Email
           </label>
           <input

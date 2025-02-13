@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { useLoaderData, useNavigate } from "react-router-dom";
-import { AuthContext } from "../auth/AuthProvider/AuthProvider";
 import Swal from "sweetalert2";
+import { AuthContext } from "../auth/AuthProvider/AuthProvider";
 
 const UpdateMyCar = () => {
   const { user } = useContext(AuthContext);
@@ -74,12 +74,17 @@ const UpdateMyCar = () => {
     <div className="mt-4 mb-4">
       <form
         onSubmit={handleUpdatedCar}
-        className="p-3 space-y-4 bg-white shadow-lg rounded-md"
+        className="p-3 space-y-4 shadow-lg rounded-md"
       >
-        <h2 className="text-2xl font-bold text-center">Add a New Car</h2>
+        <h2 className="text-2xl text-gray-100 font-bold text-center">
+          Add a New Car
+        </h2>
 
         <div className="space-y-2">
-          <label className="block text-sm font-semibold" htmlFor="name">
+          <label
+            className="block text-white text-sm font-semibold"
+            htmlFor="name"
+          >
             Car Name
           </label>
           <input
@@ -93,7 +98,10 @@ const UpdateMyCar = () => {
         </div>
 
         <div className="space-y-2">
-          <label className="block text-sm font-semibold" htmlFor="image">
+          <label
+            className="block text-white text-sm font-semibold"
+            htmlFor="image"
+          >
             Car Image URL
           </label>
           <input
@@ -107,7 +115,10 @@ const UpdateMyCar = () => {
         </div>
 
         <div className="space-y-2">
-          <label className="block text-sm font-semibold" htmlFor="model">
+          <label
+            className="block text-white text-sm font-semibold"
+            htmlFor="model"
+          >
             Model
           </label>
           <input
@@ -121,7 +132,10 @@ const UpdateMyCar = () => {
         </div>
 
         <div className="space-y-2">
-          <label className="block text-sm font-semibold" htmlFor="pricePerDay">
+          <label
+            className="block text-white text-sm font-semibold"
+            htmlFor="pricePerDay"
+          >
             Price Per Day
           </label>
           <input
@@ -135,7 +149,10 @@ const UpdateMyCar = () => {
         </div>
 
         <div className="space-y-2">
-          <label className="block text-sm font-semibold" htmlFor="availability">
+          <label
+            className="block text-white text-sm font-semibold"
+            htmlFor="availability"
+          >
             Availability
           </label>
           <select
@@ -150,7 +167,9 @@ const UpdateMyCar = () => {
         </div>
 
         <div className="space-y-2">
-          <label className="block text-sm font-semibold">Features</label>
+          <label className="block text-white text-sm font-semibold">
+            Features
+          </label>
           <input
             type="text"
             name="feature1"
@@ -178,7 +197,10 @@ const UpdateMyCar = () => {
         </div>
 
         <div className="space-y-2">
-          <label className="block text-sm font-semibold" htmlFor="description">
+          <label
+            className="block text-white text-sm font-semibold"
+            htmlFor="description"
+          >
             Description
           </label>
           <textarea
@@ -192,7 +214,10 @@ const UpdateMyCar = () => {
         </div>
 
         <div className="space-y-2">
-          <label className="block text-sm font-semibold" htmlFor="email">
+          <label
+            className="block text-white text-sm font-semibold"
+            htmlFor="email"
+          >
             User Email
           </label>
           <input

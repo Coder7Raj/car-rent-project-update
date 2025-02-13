@@ -12,7 +12,7 @@ const Banner = () => {
     },
     {
       id: 2,
-      src: "https://i.postimg.cc/4d8RpkQ1/milton-keynes-bucks-uk-april-260nw-2146087283.jpg",
+      src: "https://i.postimg.cc/br0n4nhD/2024-jaguar-xf-p300-r-dynamic-101-64e8cdd02fc9a.jpg",
       alt: "Slide 2",
       title: "Discover the Amazing Cars",
       description: "Dive into a world of innovation and style.",

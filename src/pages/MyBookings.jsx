@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
-import { AuthContext } from "../auth/AuthProvider/AuthProvider";
 import Swal from "sweetalert2";
+import { AuthContext } from "../auth/AuthProvider/AuthProvider";
 
 const MyBookings = () => {
   const { user } = useContext(AuthContext);
@@ -98,7 +98,7 @@ const MyBookings = () => {
           </div>
         ))
       ) : (
-        <p className="text-center text-gray-600">No bookList items found.</p>
+        <p className="text-center text-gray-200">No bookList items found.</p>
       )}
     </div>
   );

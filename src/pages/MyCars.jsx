@@ -24,10 +24,10 @@ const MyCars = () => {
   }, [user]);
   return (
     <div>
-      <p className="text-2xl text-gray-800 font-bold text-center p-3">
+      <p className="text-2xl text-gray-100 font-bold text-center p-3">
         My Added Cars
       </p>
-      <p className="text-gray-500 text-center mb-6">
+      <p className="text-gray-300 text-center mb-6">
         Keep track of your favorite cars in one place! Explore the list of
         vehicles <br /> you've added, manage your collection, and revisit your
         top choices anytime.
